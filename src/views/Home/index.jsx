@@ -44,6 +44,7 @@ const Home = function () {
     });
     const loadMoreDom = loadMore.current;
     ob.observe(loadMore.current);
+    console.log(123);
     return () => {
       ob.unobserve(loadMoreDom);
     };
